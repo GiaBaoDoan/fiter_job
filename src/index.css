@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style-type: disc;
+}
+li:first-child{
+    list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.max-width {
+  @apply px-5 lg:max-w-5xl lg:mx-auto xl:max-w-6xl 2xl:px-0;
+}
+
+h1 {
+  line-height: 1.2 !important;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.style {
+  @apply text-white uppercase text-xs  p-3 py-1 rounded-full bg-black
+}
+.style-job {
+  @apply text-cyan-700 font-bold text-sm bg-cyan-50 hover:text-white cursor-pointer transition-all hover:bg-cyan-600 px-3 py-1 rounded-lg
+}
